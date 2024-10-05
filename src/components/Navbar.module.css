@@ -1,0 +1,52 @@
+/** @format */
+
+.navbar {
+	display: flex;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em 2em;
+	flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+}
+.brand {
+	font-size: 1.2em;
+}
+.brand span {
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.links_list {
+	display: flex;
+	list-style: none;
+}
+.links_list {
+	margin-right: 1em;
+}
+.links_list li a {
+	padding: 0.4em 0.6em;
+}
+.active {
+	background-color: #000;
+	color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+	.navbar {
+		padding: 0.5em 1em;
+	}
+
+	.links_list {
+		display: block; /* Coloca os links em coluna em telas pequenas */
+		width: 100%; /* Ocupa toda a largura */
+		text-align: center;
+	}
+
+	.links_list li {
+		margin-bottom: 0.5em; /* Espaçamento entre os links */
+	}
+
+	.brand {
+		font-size: 1em; /* Ajusta o tamanho da fonte para caber melhor */
+		width: 100%;
+	}
+}

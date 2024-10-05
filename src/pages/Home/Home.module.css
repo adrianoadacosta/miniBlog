@@ -1,0 +1,54 @@
+/** @format */
+
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.search_form {
+	max-width: 100%;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+.search_form input {
+	margin-right: 10px;
+	width: 50%;
+	padding: 10px; /* Adicionar padding para deixar o input mais confortável */
+	font-size: 1em; /* Tamanho de texto ajustado */
+}
+.noposts {
+	text-align: center;
+}
+.noposts p {
+	margin-bottom: 1.5em;
+}
+.noposts a {
+	padding: 10px 25px;
+}
+
+/* Responsividade para telas menores */
+@media only screen and (max-width: 768px) {
+	.search_form {
+		width: 80%; /* Deixa o form maior em telas menores */
+	}
+
+	.search_form input {
+		width: 70%; /* Aumenta a largura do input */
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.search_form {
+		width: 90%; /* Quase ocupando toda a tela */
+	}
+
+	.search_form input {
+		width: 100%; /* Input ocupa 100% da largura disponível */
+		margin-right: 0; /* Remove o espaçamento lateral */
+		padding: 12px; /* Aumenta o padding em dispositivos menores */
+		font-size: 1.1em; /* Texto um pouco maior para melhor leitura */
+	}
+}

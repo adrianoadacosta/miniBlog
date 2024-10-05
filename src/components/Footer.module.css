@@ -1,0 +1,19 @@
+/** @format */
+
+.footer {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #edf3f6;
+	padding: 1em; /* Para evitar que o conteúdo fique espremido em telas pequenas */
+}
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        height: auto; /* Ajusta a altura conforme o conteúdo */
+        padding: 1.5em 0.5em; /* Mais espaçamento em telas pequenas */
+        text-align: center;
+    }
+}

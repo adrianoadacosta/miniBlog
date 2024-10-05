@@ -1,0 +1,43 @@
+/** @format */
+
+.post_detail {
+	margin-bottom: 2em;
+}
+.post_detail img {
+	max-width: 600px;
+	height: 400px;
+}
+.post_detail h2 {
+	margin-bottom: 0.4em;
+}
+.post_detail .tags {
+	margin-bottom: 1.2em;
+	display: flex;
+}
+.tags p {
+	margin-right: 0.5em;
+}
+.tags span {
+	font-weight: bold;
+}
+.createdby {
+	font-style: italic;
+	color: #444;
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+	.post_detail {
+		margin-bottom: 1em;
+		padding: 0 1em;
+	}
+
+	.post_detail img {
+		height: 220px;
+	}
+
+	.tags {
+		justify-content: center; /* Centraliza as tags */
+	}
+}
