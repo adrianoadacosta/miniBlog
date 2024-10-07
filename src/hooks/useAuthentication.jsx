@@ -60,6 +60,7 @@ import {
         }
   
         setError(systemErrorMessage);
+        setLoading(false);
       }
     };
   
